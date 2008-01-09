@@ -1,0 +1,19 @@
+inherit ocaml
+
+DESCRIPTION="OCaml SQLite2 bindings"
+HOMEPAGE="http://neugierig.org/software/ocaml/sqlite/"
+SRC_URI="http://neugierig.org/software/ocaml/sqlite/${P}.tar.bz2"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	dodir /usr/bin
+	USE_DESTDIR=0
+	ocaml_install
+}

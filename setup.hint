@@ -1,0 +1,6 @@
+category: Database OCaml
+requires: cygwin libsqlite0 ocaml
+sdesc: "OCaml SQLite bindings"
+ldesc: "This package allows to use the Sqlite library from ocaml. The 
+Sqlite library allows to create applications with embedded sql database, 
+i.e. no external sql server is required."

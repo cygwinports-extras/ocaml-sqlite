@@ -1,0 +1,70 @@
+ocaml-sqlite
+------------------------------------------
+This package allows to use the Sqlite library from ocaml. The
+Sqlite library allows to create applications with embedded
+sql database, i.e. no external sql server is required.
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  libsqlite0-2.8.17-3
+  ocaml-3.10.0-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.25-7
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://neugierig.org/software/ocaml/sqlite/
+
+Canonical download:
+  http://neugierig.org/software/ocaml/sqlite/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ocaml-sqlite-0.3.5-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ocaml-sqlite-0.3.5-X.cygport all
+
+This will create:
+  /usr/src/ocaml-sqlite-0.3.5-X-src.tar.bz2
+  /usr/src/ocaml-sqlite-0.3.5-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/sqlitetop
+  /usr/lib/ocaml/sqlite/META
+  /usr/lib/ocaml/sqlite/libsqlite.a
+  /usr/lib/ocaml/sqlite/sqlite.a
+  /usr/lib/ocaml/sqlite/sqlite.cma
+  /usr/lib/ocaml/sqlite/sqlite.cmi
+  /usr/lib/ocaml/sqlite/sqlite.cmx
+  /usr/lib/ocaml/sqlite/sqlite.cmxa
+  /usr/lib/ocaml/sqlite/sqlite.mli
+  /usr/lib/ocaml/stublibs/dllsqlite.so
+  /usr/lib/ocaml/stublibs/dllsqlite.so.owner
+  /usr/share/doc/ocaml-sqlite-0.3.5/COPYING
+  /usr/share/doc/ocaml-sqlite-0.3.5/Changes
+  /usr/share/doc/ocaml-sqlite-0.3.5/README
+  /usr/share/doc/ocaml-sqlite-0.3.5/TODO
+
+------------------
+
+Port Notes:
+
+----- version 0.3.5-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
